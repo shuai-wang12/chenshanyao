@@ -1,0 +1,8 @@
+prefix=/home/jovaa/Desktop/code/record/planning/my_planning/devel
+
+Name: two_side_a_star
+Description: Description of two_side_a_star
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
