@@ -1,0 +1,5 @@
+build/
+video/
+.vscode/
+devel/
+install/
