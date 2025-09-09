@@ -1,0 +1,7 @@
+map_resolution: 1
+map_width: 60
+map_height: 60
+map_boundary_x: [0,30,30,57,59,59,0]
+map_boundary_y: [35,35,59,59,57,0,0]
+
+  

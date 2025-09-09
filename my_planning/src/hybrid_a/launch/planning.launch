@@ -1,0 +1,40 @@
+<launch>
+
+    <node pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find hybrid_a)/rviz/display.rviz" />
+
+    <!-- <node pkg="map_server" type="map_server" name="map_server" args="$(find hybrid_a)/maps/map.yaml"/> -->
+
+    <!-- <node pkg="hybrid_a" type="hybrid_a_node" name="hybrid_a_node" > -->
+    
+    <node pkg="hybrid_a" type="hybrid_a_node" name="hybrid_a_node" output="screen">
+        <param name="planner/steering_angle" value="11.0" />
+        <param name="planner/steering_angle_discrete_num" value="1" />
+        <param name="planner/wheel_base" value="2.0" />
+        <param name="planner/segment_length" value="1.6" />
+        <param name="planner/segment_length_discrete_num" value="8" />
+        <param name="planner/steering_penalty" value="1.5" />
+        <param name="planner/reversing_penalty" value="3.0" />
+        <param name="planner/steering_change_penalty" value="2.0" />
+        <param name="planner/shot_distance" value="500.0" />
+        <param name="planner/length" value="4.7" />
+        <param name="planner/width" value="2.0" />
+        <param name="planner/rear" value="1.3" />
+
+        <param name="traj_opti/vehicle/max_velocity" value="20.0" />
+        <param name="traj_opti/vehicle/min_acceleration" value="-10.0" />
+        <param name="traj_opti/vehicle/max_acceleration" value="10.0" />
+        <param name="traj_opti/vehicle/jerk_max" value="10.0" />
+        <param name="traj_opti/vehicle/phi_max" value="0.18" />
+        <param name="traj_opti/vehicle/omega_max" value="0.2" />
+
+        <param name="start/x" value="16.5"/>
+        <param name="start/y" value="50.0"/>
+        <param name="start/theta" value="-1.831398719"/>
+
+        <param name="goal/x" value="20.2273"/>
+        <param name="goal/y" value="11.9176"/>
+        <param name="goal/theta" value="1.13839"/>
+        <rosparam file="$(find hybrid_a)/maps/paitu.yaml" command="load"/>
+    </node>
+</launch>
