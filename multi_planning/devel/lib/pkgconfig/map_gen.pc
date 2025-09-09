@@ -1,0 +1,8 @@
+prefix=/home/jovaa/Desktop/code/record/planning/multi_planning/devel
+
+Name: map_gen
+Description: Description of map_gen
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

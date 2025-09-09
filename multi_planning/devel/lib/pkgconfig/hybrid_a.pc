@@ -1,0 +1,8 @@
+prefix=/home/jovaa/Desktop/code/record/planning/multi_planning/devel
+
+Name: hybrid_a
+Description: Description of hybrid_a
+Version: 0.0.0
+Cflags: -I/home/jovaa/Desktop/code/record/planning/multi_planning/src/hybrid_a/include
+Libs: -L${prefix}/lib 
+Requires: 
